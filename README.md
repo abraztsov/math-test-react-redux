@@ -8,7 +8,8 @@ Repository created exclusively for demonstrating knowledge of React, Redux, Webp
 
 How to run
 ------------------------
-`npm start`
+1. `npm start`
+2. `Go to localhost:8080`
 
 Credits
 ------------------------
