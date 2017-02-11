@@ -4,7 +4,7 @@
   "description": "React Redux Webpack Babel app",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.babel.js --inline --host '0.0.0.0' "
+    "start": "npm install && webpack-dev-server --config webpack.config.babel.js --inline --host '0.0.0.0' "
   },
   "author": "",
   "keywords": [
