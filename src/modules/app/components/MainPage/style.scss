@@ -1,0 +1,17 @@
+@import '~src/styles/global';
+@import '~src/styles/extends';
+
+.mainContentGroup {
+  @extend %mainContentGroup;
+  h1 {
+    @extend %h1;
+    text-transform: uppercase;
+  }
+  .subText {
+    @extend %p;
+  }
+  .currentQuestion {
+    margin: 20px 0 0;
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "presets": [
+    ["latest", { "modules": false }],
+    "stage-3",
+    "react"
+  ],
+  "plugins": [
+    ["transform-regenerator", {
+      "asyncGenerators": false,
+      "generators": false
+    }],
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-react-constant-elements"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "transform-react-inline-elements"
+      ]
+    },
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}

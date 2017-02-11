@@ -1,0 +1,44 @@
+%position-text {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: $font-family-bold;
+}
+%h1 {
+  max-width: 90%;
+  text-align: center;
+  font-size: 3em;
+  color: #FFF;
+}
+%p {
+  max-width: 700px;
+  margin: 20px 0 40px;
+  text-align: center;
+  font-size: 1.3em;
+}
+%bottom-right-text {
+  @extend %position-text;
+  bottom: 25px; right: 35px;
+}
+%bottom-left-text {
+  @extend %position-text;
+  bottom: 25px; left: 35px;
+}
+%top-right-text {
+  @extend %position-text;
+  top: 25px; right: 35px;
+}
+%top-left-text {
+  @extend %position-text;
+  top: 25px; left: 35px;
+}
+%mainContentGroup {
+  position: absolute;
+  z-index: 1;
+  left: 50%; top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transform: translate3d(-50%, -50%, 0);
+}

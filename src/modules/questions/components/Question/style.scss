@@ -1,0 +1,43 @@
+@import '~src/styles/global';
+@import '~src/styles/extends';
+
+.mainContentGroup {
+  @extend %mainContentGroup;
+  h1 {
+    @extend %h1;
+    text-transform: uppercase;
+  }
+  .subText {
+    @extend %p;
+  }
+  .answers {
+    display: flex;
+    div {
+      margin-right: 30px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    font-size: 3em;
+    background: #2f4045;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.15s linear;
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+}
+.back {
+  @extend %top-left-text;
+  user-select: none;
+  cursor: pointer;
+}

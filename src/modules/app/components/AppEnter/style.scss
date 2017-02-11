@@ -1,0 +1,46 @@
+@import '~src/styles/global';
+@import '~src/styles/extends';
+
+$main-padding: 14px;
+
+.rootC {
+  position: relative;
+  height: 100vh;
+  padding: $main-padding;
+  background: #2f4045;
+}
+
+section {
+  height: 100%;
+  background: #202f35;
+  animation: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.author {
+  position: absolute;
+  bottom: 25px; left: 35px;
+  font-family: $font-family-bold;
+  word-spacing: 3px;
+  a {
+    margin: 0 0 0 5px;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+  }
+}
+.slogan {
+  position: absolute;
+  top: 25px; left: 50%;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+.hint {
+  @extend %bottom-right-text;
+}
+.currentQuestion {
+  @extend %top-right-text;
+}
